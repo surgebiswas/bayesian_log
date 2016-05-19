@@ -1,0 +1,37 @@
+\begin{thebibliography}{1}
+
+\bibitem{Hilbe2011}
+Joseph Hilbe.
+\newblock {\em {Negative Binomial Regression}}.
+\newblock Cambridge University Press, 2 edition, 2011.
+
+\bibitem{OHara2010}
+Robert~B O'Hara and D~Johan Kotze.
+\newblock {Do not log-transform count data}.
+\newblock {\em Methods in Ecology and Evolution}, 1:118--122, 2010.
+
+\bibitem{Besag1986}
+Julian Besag.
+\newblock {On the Statistical Analysis of Dirty Pictures}.
+\newblock {\em Journal of the Royal Statistical Society}, 48(3):259--302, 1986.
+
+\bibitem{Biswas2016}
+Surojit Biswas, Konstantin Kerner, Paulo {Jose Pereira Lima Teixeira},
+  Jeffery~L. Dangl, Vladimir Jojic, and Philip~A. Wigge.
+\newblock {Lightweight transcriptomics}.
+\newblock {\em In Preparation}, 2016.
+
+\bibitem{Aitchison1989}
+J.~Aitchison and C~H Ho.
+\newblock {The multivariate Poisson-log normal distribution}.
+\newblock {\em Biometrika}, 76(4):643--653, 1989.
+
+\bibitem{Biswas2015}
+Surojit Biswas, Meredith Mcdonald, Derek~S Lundberg, Jeffery~L Dangl, and
+  Vladimir Jojic.
+\newblock {Learning Microbial Interaction Networks from Metagenomic Count
+  Data}.
+\newblock In {\em Research in Computational Molecular Biology}, volume~1, pages
+  32--43, 2015.
+
+\end{thebibliography}
