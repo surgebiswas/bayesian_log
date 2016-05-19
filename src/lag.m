@@ -1,4 +1,4 @@
-function z = blog( t, offset, prior )
+function [z, l] = lag( t, offset, prior )
 % t is tpm table, sample x genes.
 % prior is a struct output from naive_latent_abund_learn_prior
 
@@ -8,6 +8,12 @@ for i = 1 : size(t,2)
     
 end
 
+l = complete_data_loglike(t, offset, z, prior.mu, prior.sig2);
+
+    function l = complete_data_loglike(t, o, z, mu, s)
+        d = t.*z + t.*log(o) - exp(z).*o - log(s)/2 - ((z- mu).^2)/(2*s);
+        l = sum(d);
+    end
 
     function z = learn_z(t, offset, mu, s)
         tol = 1e-4;
