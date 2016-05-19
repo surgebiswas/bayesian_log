@@ -1,1 +1,1 @@
-# bayesian_log
+# The latent logarithm
