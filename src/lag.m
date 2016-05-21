@@ -1,6 +1,9 @@
 function [z, l] = lag( t, offset, prior )
-% t is tpm table, sample x genes.
-% prior is a struct output from naive_latent_abund_learn_prior
+% lag - computes latent logarithm, given t, offset (o), and the prior.
+%
+% t:        column vector of non-negative values (e.g. counts)
+% offset:   column vector of positive values the same size as t. This is 'o' from the paper.
+% prior:    struct with two fields: 'mu' (the prior mean), and 'sig2' (the prior variance).
 
 z = zeros(size(t));
 for i = 1 : size(t,2)
