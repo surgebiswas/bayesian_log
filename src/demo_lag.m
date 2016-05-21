@@ -1,14 +1,17 @@
 clear;
 rng('default');
-cd('~/GitHub/bayesian_log'); % Change accordingly
+cd('~/GitHub/latent_log'); % Change accordingly
 path(genpath(pwd), path);
 
 % Load the data.
-load('AT2G43386_AT1G14630.mat'); % t and o in memory.
+% t, t2, and o in memory. 
+% t and t2 are the TPM abundances for the 'rare' and 'abundant' gene respectively.
+% o contains the TPM offsets.
+load('AT2G43386_AT1G14630.mat'); 
 
 
 % Figure 1 code
-if false
+if true
     % Define the prior.
     % These values were actually those found from an independent set of samples
     % measured for this gene.
