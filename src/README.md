@@ -6,14 +6,16 @@ The two functions of primary interest are `lag.m` and `lag_plus_learn_prior.m`. 
 
 An example of their use is given below:
 
-  clear;
-  rng('default');
-  cd('~/GitHub/latent_log'); % Change accordingly
-  path(genpath(pwd), path);
-  
-  % Load the data.
-  % t, t2, and o in memory. 
-  % t and t2 are the TPM abundances for the 'rare' and 'abundant' gene respectively.
-  % o contains the TPM offsets.
-  load('AT2G43386_AT1G14630.mat'); 
+```
+clear;
+rng('default');
+cd('~/GitHub/latent_log'); % Change accordingly
+path(genpath(pwd), path);
+
+% Load the data.
+% t, t2, and o in memory. 
+% t and t2 are the TPM abundances for the 'rare' and 'abundant' gene respectively.
+% o contains the TPM offsets.
+load('AT2G43386_AT1G14630.mat'); 
+```
 
