@@ -23,13 +23,15 @@ path(genpath(pwd), path);
 % o contains the TPM offsets.
 load('AT2G43386_AT1G14630.mat'); 
 
-% First set a  prior mean and variance and let lag infer the log latent TPMs
+% First set a  prior mean and variance and let lag infer the log latent TPMs (rates)
 prior.mu = 0.25;
 prior.sig2 = 0.05;
-z = lag(t, o, prior);
+z1 = lag(t, o, prior);
 
-% 
-
+% Now also learn the prior in addition to the log latent TPMs (rates)
+z2 = lag_plus_learn_prior(t, o);
 
 ```
+
+Send questions/comments/suspected bugs to surojitbiswas@g.harvard.edu
 
