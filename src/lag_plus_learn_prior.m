@@ -9,9 +9,9 @@ while abs(del) > 1e-6
     prior.mu = mean(z);
     prior.sig2 = var(z);
     del = l - oldl;
-    if del < 0; disp(num2str(del)); end
+    %if del < 0; disp(num2str(del)); end
     oldl = l;
-    fprintf('%0.4f\t%0.4f\t%0.7f\n', prior.mu, prior.sig2, l) 
+    %fprintf('%0.4f\t%0.4f\t%0.7f\n', prior.mu, prior.sig2, l) 
 end
 
 
